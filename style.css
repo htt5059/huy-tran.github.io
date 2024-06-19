@@ -82,9 +82,16 @@ h2 {
 }
 
 /* Used in the About Me sections */
+@media only screen and (max-width: 680px){
+  .container {
+    display: block;
+  }
+}
 
-.container {
-  display: flex;
+@media only screen and (min-width: 680px){
+  .container {
+    display: flex;
+  }
 }
 
 /* About Me */
@@ -94,13 +101,19 @@ h2 {
   align-items: center;
 }
 
+@media only screen and (max-width: 680px){
+  .about-me{
+    margin: 50px; 
+  }
+}
+
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
   color: #7600bc;
 }
 
-#about-me p {
+#about-me > p {
   font-size: 25px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
@@ -192,7 +205,7 @@ h2 {
 
 .all_recommendations {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin-left: 1in;
   flex-direction: row;
   flex-flow: wrap;
@@ -211,7 +224,6 @@ h2 {
   margin: 10px;
   border:1px solid gray;
   font-size: 18px;
-  height:150px
 }
 
 .recommendation span {
