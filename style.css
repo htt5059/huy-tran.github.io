@@ -25,7 +25,6 @@ body {
 
 .topmenu:hover {
   color: white;
-  /* Add the styles here */
   text-decoration: underline;
 }
 
@@ -37,7 +36,6 @@ body {
 .profile_name {
   float: left;
   padding-left: 2cm;
-  /* Add the styles here */
   color: #FFFFFF;
   font-weight: bolder;
 }
@@ -81,30 +79,25 @@ h2 {
   position: relative;
 }
 
-/* Used in the About Me sections */
-@media only screen and (max-width: 680px){
-  .container {
-    display: block;
-  }
+.container {
+  display: flex;
 }
 
-@media only screen and (min-width: 680px){
-  .container {
-    display: flex;
-  }
-}
+/* Used in the About Me sections */
 
 /* About Me */
-
-.about-me {
+#about-me {
   display: flex;
   align-items: center;
+  margin: 60px;
 }
 
-@media only screen and (max-width: 680px){
-  .about-me{
-    margin: 50px; 
-  }
+.image-wrapper {
+  border-radius: 10px;
+  border-style: solid;
+  margin-right: 0.75rem;
+  margin-bottom: 0.15rem;
+  float: left;
 }
 
 #about-me h1 {
@@ -120,10 +113,13 @@ h2 {
 }
 
 .profile_image {
-  width: 550px;
+  width: 150px;
+  border-radius: 8px;
   height: fit-content;
+  max-height: 200px;
+  object-fit: contain;
   vertical-align: middle;
-  margin: 5px;
+  margin: 2px;
 }
 
 /* Skills */
@@ -183,7 +179,7 @@ h2 {
 .projects-container hr {
   border: 1px solid lightgray;
   width: 75%;
-  margin-left: 5cm;
+  float: center;
 }
 
 .project-card {
@@ -334,4 +330,18 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 680px){
+  .profile_name .contact_info {
+    font-size: 12px;
+  }
+
+  .image-wrapper{
+    float: top;
+  } 
+  
+  h2 {
+    font-size: 16px;
+  }
 }

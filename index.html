@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Huy T Tran Tran - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huy T Tran - Portfolio</title>
     <link rel="stylesheet" href="./style.css"/>
     <script src="./script.js"></script>
   </head>
@@ -31,25 +32,9 @@
     </nav>
 
     <!-- About Me -->
-    <section id="about-me" class="">
-      <div 
-        style="
-          border-radius: 10px;
-          border-style: solid;
-          margin: 0.75rem;
-          height: 304px;
-          width: 254px;
-          float: left;
-        ">
-        <img src="html_finalprojimages/AR_Self.jpg" 
-          style="
-            border-radius: 8px;
-            margin: 2px;
-            object-fit: fill;
-            height: 300px;
-            width: 250px;
-          " 
-          class="profile_image"/>
+    <div id="about-me">
+      <div class="image-wrapper">
+        <img src="html_finalprojimages/AR_Self.jpg" class="profile_image"/>
       </div>
 
       <div>
@@ -63,10 +48,10 @@
             By leveraging responsive UI and mobile-friendly design principles, I transformed Ignition Vision HMIs into user-friendly web application for Erie Water Works and Amy's Kitchen. These projects increased remote monitoring ability and observability. The success of these projects even brought attention of Food Engineering Magazine. My expertise in building robust APIs, secure backends, and cloud applications (skills gained from IBM certification) allows me to develop scalable and secure software solutions leveraging automation processes and cloud technologies.
           </p>
       </div>
-    </section>
+    </div>
               
     <!-- Skills -->
-    <section id="skills">
+    <div id="skills">
       <h2>Skills</h2>
       <div style="clear:both;"></div>
 
@@ -132,10 +117,10 @@
         </div>
 
       </div>
-    </section>
+    </div>
           
     <!-- Projects -->
-    <section class="projects" id="projects">
+    <div class="projects" id="projects">
       <h2>
         Projects
       </h2>
@@ -172,11 +157,11 @@
             </ul>
           </div>
     </div>
-    </section>
+    </div>
     <div style="clear:both;"></div>
 
     <!-- Recommendations -->
-    <section id="recommendations">
+    <div id="recommendations">
       <h2>Recommendations</h2>
       <div style="clear:both;"></div>
       <div class="all_recommendations" id="all_recommendations">
@@ -191,10 +176,10 @@
           <span>&#8221;</span>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Recommendation Form -->
-    <section id="contact">
+    <div id="contact">
       <div class="flex_center">
         <fieldset>
           <legend class="introduction">Leave a Recommendation</legend>          
@@ -205,7 +190,7 @@
           </div>
         </fieldset>
       </div>
-    </section>
+    </div>
 
     <div class="iconbutton">
       <a href="#home">
@@ -215,8 +200,8 @@
 
     <div class="popup" id="popup" class="flex_center">
       <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3 style="margin:0.75rem;">Thank you for leaving recommendation!</h3>
-      <h3 style="margin:0.75rem;">I am looking forward to working with you in the near future.</h3>
+      <h3>Thank you for leaving recommendation!</h3>
+      <h3>I am looking forward to working with you in the near future.</h3>
       <button onclick="showPopup(false)">Ok</button>
     </div>
   </body>
